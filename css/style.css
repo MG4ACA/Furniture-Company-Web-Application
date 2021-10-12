@@ -6,6 +6,11 @@
 body{
     font-family: 'Poppins', sans-serif;
 }
+.logo{
+    width: 50px;
+    height: 30px;
+    border: 1px solid black;
+}
 nav{
     flex: 1;
     text-align: right;
@@ -325,4 +330,9 @@ input:focus{
 }
 .descDetail{
     padding-left: 30px;
+}
+
+/*------------------------------------------------About Us----------------------------------------*/
+.about{
+    text-align: initial;
 }
