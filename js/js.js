@@ -18,6 +18,7 @@ $('#btnBeds').click(function (){
     BedCategory.style.display='block';
     ProductInfo.style.display='none';
     AbutUs.style.display='none';
+    ContactUs.style.display='none';
 });
 
 var btnProductDetails1 = document.getElementById("btnProductDetails1");
@@ -31,6 +32,7 @@ btnProductDetails1.addEventListener('click',function (){
     BedCategory.style.display='none';
     ProductInfo.style.display='block';
     AbutUs.style.display='none';
+    ContactUs.style.display='none';
 });
 
 btnProductDetails2.addEventListener('click',function (){
@@ -39,6 +41,7 @@ btnProductDetails2.addEventListener('click',function (){
     BedCategory.style.display='none';
     ProductInfo.style.display='block';
     AbutUs.style.display='none';
+    ContactUs.style.display='none';
 });
 
 btnProductDetails3.addEventListener('click',function (){
@@ -47,6 +50,7 @@ btnProductDetails3.addEventListener('click',function (){
     BedCategory.style.display='none';
     ProductInfo.style.display='block';
     AbutUs.style.display='none';
+    ContactUs.style.display='none';
 });
 
 
@@ -90,4 +94,19 @@ $('#btnAboutUs').click(function (){
     BedCategory.style.display='none';
     ProductInfo.style.display='none';
     AbutUs.style.display='block';
-})
+    ContactUs.style.display='none';
+});
+
+/*---------------------------------Contact Us-------------------------------------*/
+
+let ContactUs = document.getElementById('contactUs');
+ContactUs.style.display='none';
+
+$('#btnContactUs').click(function (){
+    HomeBody.style.display='none';
+    Footer.style.display='block';
+    BedCategory.style.display='none';
+    ProductInfo.style.display='none';
+    AbutUs.style.display='none';
+    ContactUs.style.display='block';
+});
