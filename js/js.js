@@ -110,3 +110,22 @@ $('#btnContactUs').click(function (){
     AbutUs.style.display='none';
     ContactUs.style.display='block';
 });
+
+/*---------------------------------Mobile Version-------------------------------------*/
+
+$('#btnBedsNav').click(function (){
+    HomeBody.style.display='none';
+    Footer.style.display='block';
+    BedCategory.style.display='block';
+    ProductInfo.style.display='none';
+    AbutUs.style.display='none';
+    ContactUs.style.display='none';
+});
+
+var show = document.getElementById("nav-links");
+function showMenu(){
+    show.style.right = "0";
+}
+function closeMenu(){
+    show.style.right = "-200px";
+}

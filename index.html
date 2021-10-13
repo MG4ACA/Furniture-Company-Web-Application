@@ -3,17 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <title>Furniture-Company</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="css/style.css">
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 
 <!-----------------------------------------Home Page------------------------------------------------->
 
-<div class="mainNavBar">
+<div class="mainNavBar" >
     <div class="row">
-        <div class="logo">
-            <a href="index.html">Logo</a>
+        <div>
+            <img href="#" class="image" src="assets/icon/ijse.png" alt="logo">
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()" ></i>
+        <div class="nav-links" id="nav-links">
+            <i class="fa fa-close" onclick="closeMenu()" style="color: white"></i>
+            <div class="navSection">
+                <div class="dropdown">
+                    <button class="dropbtn">PRODUCTS
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a id="btnBedsNav">Beds</a>
+                        <a href="#">Tables</a>
+                        <a href="#">Steel Furniture</a>
+                        <a href="#">Dressing Table</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">LIVING ROOM
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">BEDROOM
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">DIVING
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">OFFICE FURNITURE
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">PLASTIC PRODUCT
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">APPLIANCES
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">STORE LOCATOR
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                </div>
+            </div>
         </div>
         <nav>
             <ul>
@@ -24,10 +114,12 @@
             </ul>
         </nav>
     </div>
-`</div>
+</div>
 
 <div class="navbar">
-    <a href="#home" style="color: white;">35th ANNIVERSARY</a>
+
+    <aside class="asideNavBar" >
+        <a href="#home" style="color: white;">35th ANNIVERSARY</a>
     <div class="dropdown">
         <button class="dropbtn">PRODUCTS
             <i class="fa fa-caret-down"></i>
@@ -109,11 +201,12 @@
             <a href="#">Link 3</a>
         </div>
     </div>
+    </aside>
 
 </div>
 
 <div id="homeBody" class="homeBody">
-    <img src="assets/img/bodyHome.jpg" height="546px">
+    <img src="assets/img/bodyHome.jpg">
 </div>
 
 <!-----------------------------------------Footer---------------------------------------------------->
