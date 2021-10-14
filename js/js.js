@@ -66,11 +66,20 @@ SmallImg[0].onclick = function () {
 SmallImg[1].onclick = function () {
     ProductImg.src = SmallImg[1].src;
 }
+SmallImg[2].onclick = function () {
+    ProductImg.src = SmallImg[2].src;
+}
+SmallImg[3].onclick = function () {
+    ProductImg.src = SmallImg[3].src;
+}
 
 ProductHomeImg[0].onclick = function () {
     ProductImg.src = ProductHomeImg[0].src;
     SmallImg[0].src = ProductHomeImg[0].src;
-    SmallImg[1].src =  'assets/img/cart 1.1.jpg'
+    SmallImg[1].src =  'assets/img/cart 1.1.jpg';
+    SmallImg[2].src =  ProductHomeImg[0].src;
+    SmallImg[3].src =  'assets/img/cart 1.1.jpg';
+
 }
 ProductHomeImg[1].onclick = function () {
     ProductImg.src = ProductHomeImg[1].src;
@@ -132,3 +141,34 @@ function closeMenu(){
     show.style.right = "-200px";
     show.style.display="none";
 }
+
+var show2=document.getElementById("main-nav-links")
+var contactUs=document.getElementById("contactUsForm")
+function showMain() {
+    show2.style.display="block";
+    show2.style.left="0";
+    contactUs.className=" ";
+}
+function closeMainMenu(){
+    show2.style.display="none";
+    show2.style.right= "157px";
+}
+
+$('#btnMAbout').click(function (){
+    HomeBody.style.display='none';
+    Footer.style.display='block';
+    BedCategory.style.display='none';
+    ProductInfo.style.display='none';
+    AbutUs.style.display='block';
+    ContactUs.style.display='none';
+});
+
+
+$('#btnMContact').click(function (){
+    HomeBody.style.display='none';
+    Footer.style.display='block';
+    BedCategory.style.display='none';
+    ProductInfo.style.display='none';
+    AbutUs.style.display='none';
+    ContactUs.style.display='block';
+});

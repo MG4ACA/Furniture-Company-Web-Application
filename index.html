@@ -13,6 +13,16 @@
 
 <div class="mainNavBar" >
     <div class="row">
+        <i class="fa fa-ellipsis-v" onclick="showMain()"></i>
+        <div class="main-nav-div" id="main-nav-links">
+            <i class="fa fa-close" onclick="closeMainMenu()" style="color: white"></i>
+            <ul class="main-nav-ul">
+                <li id="btnMAbout">ABOUT US</li>
+                <li  >GALLERY</li>
+                <li>CORPORATE ENQUIRY</li>
+                <li id="btnMContact">CONTACT US</li>
+            </ul>
+        </div>
         <div>
             <a href="index.html"><img href="#" class="image" src="assets/icon/ijse.png" alt="logo"></a>
         </div>
@@ -210,9 +220,7 @@
 </div>
 
 <!-----------------------------------------Footer---------------------------------------------------->
-<div id="footer" class="footer">
-    <section class="section-footer">
-
+<div id="footer" class="footer" >
     <div class="call">
         <i class="fa fa-phone" aria-hidden="true"></i>
         <a>Customer Care : 0123456789</a>
@@ -221,16 +229,18 @@
         <i class="fa fa-envelope-o" aria-hidden="true"></i>
         <a>company@info.lk</a>
     </div>
-    </section>
+
 </div>
 <!------------------------------------------Bead Category--------------------------------------------->
 
 <div id="bedCategory" class="category" style="display: block;">
 
     <div class="titleBar">
-        <div class="row">
+        <div class="row" >
+            <section id="raw-sp">
             <label class="label">BEDS</label>
             <label>HOME > BEDROOM > Bedroom Furniture > BEDS</label>
+            </section>
         </div>
     </div>
 
@@ -372,7 +382,7 @@
 <div id="aboutUs">
     <div class="titleBar">
         <div class="row">
-            <label>HOME > About Us</label>
+            <label class="aboutUs-label">HOME > About Us</label>
         </div>
     </div>
     <div class="small-container single-product">
@@ -436,26 +446,29 @@
                     </div>
                 </div>
                 <div class="col-2" style="padding-bottom: 11px;">
-                    <div class="contactUsMap">
-                        <div class="row" style="margin-top: -26px;">
-                            <div class="">
-                                <label class=""><i class="fa fa-phone-square" aria-hidden="true"></i>  PHONE</label>
-                                <br>
-                                <label  class="">01123456789</label>
-                            </div>
-                            <div class="">
-                                <label class=""><i class="fa fa-envelope" aria-hidden="true"></i> EMAIL</label>
-                                <br>
-                                <label  class="">customercare@info.lk</label>
-                            </div>
-                            <div class="">
-                                <label class=""><i class="fa fa-map-marker" aria-hidden="true"></i> LOCATION</label>
-                                <br>
-                                <label  class="">NO 1, Lotas Lane, Colombo 07</label>
-                            </div>
+                    <div class="contactUsMap" >
+                        <div class="row" id="contactUsForm">
+
+                                <div class="contact-div">
+                                    <label class=""><i class="fa fa-phone-square" aria-hidden="true"></i>  PHONE</label>
+                                    <br>
+                                    <label  class="">01123456789</label>
+                                </div>
+                                <div class="contact-div">
+                                    <label class=""><i class="fa fa-envelope" aria-hidden="true"></i> EMAIL</label>
+                                    <br>
+                                    <label  class="">customercare@info.lk</label>
+                                </div>
+                                <div class="contact-div">
+                                    <label class=""><i class="fa fa-map-marker" aria-hidden="true"></i> LOCATION</label>
+                                    <br>
+                                    <label  class="">NO 1, Lotas Lane, Colombo 07</label>
+                                </div>
+
+
                         </div>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63480.83748982196!2d80.17697732630046!3d6.055975780879549!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae173bb6932fce3%3A0x4a35b903f9c64c03!2sGalle!5e0!3m2!1sen!2slk!4v1634023191513!5m2!1sen!2slk" width="639" height="410" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                    </div>
+
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3910.892252994043!2d80.21876332656458!3d6.025303720335455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae173a378ee025d%3A0xb96f8a16ae16c3fe!2sGalle%20Dutch%20Fort!5e0!3m2!1sen!2slk!4v1634205472235!5m2!1sen!2slk" class="googleMap"></iframe>                    </div>
                 </div>
             </div>
         </div>
