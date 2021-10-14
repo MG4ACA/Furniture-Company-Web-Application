@@ -124,8 +124,11 @@ $('#btnBedsNav').click(function (){
 
 var show = document.getElementById("nav-links");
 function showMenu(){
+    show.style.display="block";
+    show.style.visibility="visible";
     show.style.right = "0";
 }
 function closeMenu(){
     show.style.right = "-200px";
+    show.style.display="none";
 }
